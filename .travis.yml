@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - stable
+
+before_script:
+  - npm install aglio
+script:
+  - bash ./deploy.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: "91dc7b3864c4"
+  - COMMIT_AUTHOR_EMAIL: "shaarli@hoa.ro"
+
+  
