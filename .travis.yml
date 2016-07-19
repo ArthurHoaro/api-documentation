@@ -3,7 +3,7 @@ node_js:
   - stable
 
 before_script:
-  - npm install aglio
+  - npm install -g aglio
 script:
   - bash ./deploy.sh
 env:
