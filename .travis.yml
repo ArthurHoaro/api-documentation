@@ -6,8 +6,8 @@ addons:
     sources:
     - ubuntu-toolchain-r-test
     packages:
-    - gcc-5
-    - g++-5
+    - gcc-4.8
+    - g++-4.8
 
 before_script:
   - npm install -g aglio
@@ -17,5 +17,7 @@ env:
   global:
   - ENCRYPTION_LABEL: "91dc7b3864c4"
   - COMMIT_AUTHOR_EMAIL: "shaarli@hoa.ro"
-
-  
+  - CC: "gcc-5"
+  - CXX: "g++-5"
+  - LINK: "gcc-5"
+  - LINKXX: "g++-5"
